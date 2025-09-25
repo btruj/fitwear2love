@@ -15,25 +15,25 @@ const categories = [
 
 const products = [
   {
-    name: "Sculpt & Stretch Jeggings",
+    name: "Sculpt & Stretch",
     variant: "$49.99",
     img: "/shop/leg6.png",
     isNew: true,
   },
   {
-    name: "Marble Effect Active Leggings",
+    name: "Marble Effect Active",
     variant: "$49.99",
     img: "/shop/leg7.png",
     isNew: false,
   },
   {
-    name: "Desert Sand Luxe Leggings",
+    name: "Desert Sand Luxe",
     variant: "$49.99",
     img: "/shop/leg8.png",
     isNew: true,
   },
   {
-    name: "Lightning Bolt Power Leggings",
+    name: "Lightning Bolt Power",
     variant: "$49.99",
     img: "/shop/leg1.png",
     isNew: false,

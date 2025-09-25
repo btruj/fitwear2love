@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   title: "FitWear2Love",
   description: "Exclusive Women Fitwear — Made in Colombia & Brazil",
    icons: {
-    icon: "/favicon.ico",          
-    shortcut: "/favicon.ico",
+    icon: "/favicon-v2.ico",          
+    shortcut: "/favicon-v2.ico",
     apple: "/apple-touch-icon.png" 
   }
 };

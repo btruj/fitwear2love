@@ -9,43 +9,51 @@ const categories = [
   { name: "New Arrivals", img: "/shop/leg1.png" },
   { name: "Matching Sets", img: "/shop/leg2.png" },
   { name: "All Bottoms", img: "/shop/leg3.png" },
-  { name: "All Tops", img: "/shop/leg4.png" },
+  { name: "All Tops", img: "/shop/top1.png" },
   { name: "Leggings", img: "/shop/leg5.png" },
 ];
 
+/* All products in one list */
 const products = [
-  {
-    name: "Sculpt & Stretch",
-    variant: "$49.99",
-    img: "/shop/leg6.png",
-    isNew: true,
-  },
-  {
-    name: "Marble Effect Active",
-    variant: "$49.99",
-    img: "/shop/leg7.png",
-    isNew: false,
-  },
-  {
-    name: "Desert Sand Luxe",
-    variant: "$49.99",
-    img: "/shop/leg8.png",
-    isNew: true,
-  },
-  {
-    name: "Lightning Bolt Power",
-    variant: "$49.99",
-    img: "/shop/leg1.png",
-    isNew: false,
-  },
+  { name: "Sculpt & Stretch",         variant: "$49.99", img: "/shop/leg6.png",  isNew: true  },
+  { name: "Marble Effect Active",     variant: "$49.99", img: "/shop/leg7.png",  isNew: false },
+  { name: "Desert Sand Luxe",         variant: "$49.99", img: "/shop/leg8.png",  isNew: true  },
+  { name: "Lightning Bolt Power",     variant: "$49.99", img: "/shop/leg9.png",  isNew: false },
+  { name: "Peace & Love Vibes Set",   variant: "$49.99", img: "/shop/leg10.png",  isNew: true  },
+  { name: "Monochrome Lightning Set", variant: "$49.99", img: "/shop/leg11.png", isNew: false },
+  { name: "Ocean Sky Ombré Set",      variant: "$49.99", img: "/shop/leg12.png", isNew: false },
+  { name: "Neon Hearts Glow Set",     variant: "$49.99", img: "/shop/leg13.png", isNew: true  },
 ];
+
+function ProductCard({ p }: { p: typeof products[number] }) {
+  return (
+    <div className="relative group">
+      {p.isNew && (
+        <span className="absolute top-2 left-2 bg-fuchsia-500 text-white text-xs px-2 py-1 rounded">
+          NEW
+        </span>
+      )}
+      <Image
+        src={p.img}
+        alt={`${p.name} - ${p.variant}`}
+        width={300}
+        height={400}
+        className="w-full h-64 object-cover rounded-md"
+      />
+      <div className="mt-3">
+        <h3 className="text-sm font-semibold">{p.name}</h3>
+        <p className="text-xs text-white/70">{p.variant}</p>
+      </div>
+    </div>
+  );
+}
 
 export default function ShopPage() {
   return (
     <section className="mx-auto max-w-7xl px-4 md:px-8 py-12 text-white">
       {/* Breadcrumb */}
       <p className="text-sm text-white/70 mb-6">
-        HOME / SHOP ALL / <span className="text-white ">NEW ARRIVALS</span>
+        HOME / SHOP ALL / <span className="text-white">NEW ARRIVALS</span>
       </p>
 
       {/* Categories */}
@@ -72,32 +80,15 @@ export default function ShopPage() {
         <button className="text-sm flex items-center gap-1">
           Filters <span className="text-xs">▼</span>
         </button>
-        <button className="text-sm  flex items-center gap-1 mt-2 md:mt-0">
+        <button className="text-sm flex items-center gap-1 mt-2 md:mt-0">
           Sort by <span className="text-xs">▼</span>
         </button>
       </div>
 
-      {/* Products Grid */}
+      {/* Products grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {products.map((p, idx) => (
-          <div key={idx} className="relative group">
-            {p.isNew && (
-              <span className="absolute top-2 left-2 bg-purple-700 text-white text-xs px-2 py-1 rounded">
-                NEW
-              </span>
-            )}
-            <Image
-              src={p.img}
-              alt={`${p.name} - ${p.variant}`}
-              width={300}
-              height={400}
-              className="w-full h-64 object-cover rounded-md"
-            />
-            <div className="mt-3">
-              <h3 className="text-sm font-semi">{p.name}</h3>
-              <p className="text-xs text-white/70">{p.variant}</p>
-            </div>
-          </div>
+        {products.map((p) => (
+          <ProductCard key={p.name} p={p} />
         ))}
       </div>
     </section>

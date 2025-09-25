@@ -9,8 +9,8 @@ export default function AboutPage() {
         <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs uppercase tracking-wide text-white/70 ring-1 ring-white/15">
           Our Story
         </span>
-        <h1 className="mt-4 text-4xl md:text-5xl tracking-tight text-white">
-          FitWear2Love™ 
+        <h1 className="mt-4 text-4xl md:text-5xl  tracking-tight text-white">
+          About FitWear2Love™ 
         </h1>
         <p className="mt-3 max-w-3xl text-white/70">
           Activewear designed with heart—inclusive sizing, flattering fits,
@@ -79,56 +79,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* VALUES */}
-      <section className="mb-14">
-        <h3 className="text-xl md:text-2xl font-medium text-white">What we value</h3>
-        <div className="mt-6 grid gap-6 md:grid-cols-3">
-          <ValueCard
-            title="Confidence"
-            text="Flattering cuts, thoughtful support, and buttery fabrics so you can focus on the win—not your waistband."
-          />
-          <ValueCard
-            title="Inclusivity"
-            text="We design for real bodies. Our fit model set spans sizes and heights for true-to-life testing."
-          />
-          <ValueCard
-            title="Quality"
-            text="Durable seams, squat-proof blends, and colorways that keep their pop after every wash."
-          />
-        </div>
-      </section>
-
-      {/* TIMELINE / MILESTONES */}
-      <section aria-label="Milestones" className="mb-14">
-        <h3 className="text-xl md:text-2xl font-medium text-white">Milestones</h3>
-        <ol className="mt-6 space-y-5">
-          <TimelineItem year="2022" text="First capsule drop sells out to friends & local clients." />
-          <TimelineItem year="2023" text="Expanded sizes and introduced our signature purple gradient." />
-          <TimelineItem year="2024" text="Community events + collabs; faster shipping and eco packaging." />
-        </ol>
-      </section>
-
-      {/* CTA STRIP */}
-      <aside className="rounded-2xl bg-white/5 ring-1 ring-white/10 p-6 md:p-8 backdrop-blur">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <div>
-            <h4 className="text-lg md:text-xl font-medium text-white">
-              Want fit advice or bulk orders?
-            </h4>
-            <p className="text-white/70">
-              Email us and we’ll help you find your perfect set.
-            </p>
-          </div>
-          <a
-            href="mailto:iris@fitwear2love.com?subject=Fit%20question%20—%20FitWear2Love"
-            className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-base font-medium text-white
-                       bg-gradient-to-r from-fuchsia-500 to-purple-600 hover:from-fuchsia-600 hover:to-purple-700
-                       shadow-lg shadow-purple-900/30"
-          >
-            Email iris@fitwear2love.com
-          </a>
-        </div>
-      </aside>
+     
 
       {/* SEO schema (optional) */}
       <script

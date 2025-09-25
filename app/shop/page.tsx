@@ -15,26 +15,26 @@ const categories = [
 
 const products = [
   {
-    name: "Charm Fit Leggings",
-    variant: "Serpentine",
+    name: "Sculpt & Stretch Jeggings",
+    variant: "$49.99",
     img: "/shop/leg6.png",
     isNew: true,
   },
   {
-    name: "Charm Fit Leggings",
-    variant: "Steel Shadow",
+    name: "Marble Effect Active Leggings",
+    variant: "$49.99",
     img: "/shop/leg7.png",
     isNew: false,
   },
   {
-    name: "Charm Fit Leggings",
-    variant: "Sandstone",
+    name: "Desert Sand Luxe Leggings",
+    variant: "$49.99",
     img: "/shop/leg8.png",
     isNew: true,
   },
   {
-    name: "Charm Fit Leggings",
-    variant: "Onyx Black",
+    name: "Lightning Bolt Power Leggings",
+    variant: "$49.99",
     img: "/shop/leg1.png",
     isNew: false,
   },

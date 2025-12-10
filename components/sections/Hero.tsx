@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section id="hero" className="scroll-mt-28">
+    <section id="hero" className="scroll-mt-28 pb-8 md:pb-12">
       <div
         className="relative min-h-[50vh] bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/backround.png')" }}
@@ -24,7 +24,7 @@ export default function Hero() {
               className="
                 inline-block px-6 py-3 rounded-lg font-sans animate-shake
                 text-white
-                bg-gradient-to-r from-pink-300 via-purple-300 to-fuchsia-400
+                bg-linear-to-r from-pink-300 via-purple-300 to-fuchsia-400
                 hover:from-pink-400 hover:via-purple-400 hover:to-fuchsia-500
                 shadow-md
               "

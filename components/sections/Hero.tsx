@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section id="hero" className="scroll-mt-28 pb-6 md:pb-8">
+    <section id="hero" className="scroll-mt-28">
       <div
         className="relative min-h-[50vh] bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/backround.png')" }}

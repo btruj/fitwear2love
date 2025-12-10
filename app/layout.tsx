@@ -20,15 +20,23 @@ const greatVibes = Great_Vibes({
 export const metadata: Metadata = {
   title: "FitWear2Love",
   description: "Exclusive Women Fitwear — Made in Colombia & Brazil",
-  icons: {
-    icon: "/icon.png",
-    apple: "/apple-icon.png",
+   icons: {
+    icon: "/favicon.ico",          
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png" 
   }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${poppins.variable} ${greatVibes.variable}`}>
+      <head>
+        <link rel="icon" type="image/png" href="/icon1.png" />
+        <link rel="icon" type="image/svg+xml" href="/icon0.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
+      </head>
       <body className="min-h-screen bg-black text-white font-sans">
         <Nav />
         <main className="min-h-[calc(100vh-8rem)]">{children}</main>

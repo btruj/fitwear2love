@@ -1,7 +1,6 @@
-// app/about/page.tsx
-export const metadata = { title: "About — FitWear2Love" };
+import Image from "next/image";
 
-export default function AboutPage() {
+export default function AboutSection() {
   return (
     <section className="mx-auto max-w-6xl px-4 md:px-6 py-16">
       {/* HERO */}
@@ -24,11 +23,14 @@ export default function AboutPage() {
         <div className="md:col-span-2">
           {/* Replace /about-iris.jpg with your photo (recommended 900×1200) */}
           <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/10 bg-white/5">
-            <img
+            <Image
               src="/about-iris.JPG"
               alt="Iris Rincon — Founder of FitWear2Love"
+              width={900}
+              height={1200}
               className="h-full w-full object-cover"
-              loading="lazy"
+              sizes="(min-width: 1024px) 480px, (min-width: 768px) 360px, 100vw"
+              priority={false}
             />
           </div>
         </div>
@@ -98,32 +100,11 @@ export default function AboutPage() {
   );
 }
 
-/* ---------- Small components ---------- */
-
 function Stat({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-xl bg-white/5 ring-1 ring-white/10 p-4">
       <div className="text-2xl font-semibold text-white">{value}</div>
       <div className="text-xs uppercase tracking-wide text-white/60 mt-1">{label}</div>
     </div>
-  );
-}
-
-function ValueCard({ title, text }: { title: string; text: string }) {
-  return (
-    <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 p-5">
-      <h4 className="text-white font-medium">{title}</h4>
-      <p className="mt-2 text-white/70 leading-relaxed">{text}</p>
-    </div>
-  );
-}
-
-function TimelineItem({ year, text }: { year: string; text: string }) {
-  return (
-    <li className="relative pl-10">
-      <span className="absolute left-0 top-1.5 h-2 w-2 rounded-full bg-gradient-to-r from-fuchsia-500 to-purple-600" />
-      <span className="text-white/60 text-sm">{year}</span>
-      <p className="text-white mt-1">{text}</p>
-    </li>
   );
 }

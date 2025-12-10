@@ -20,10 +20,9 @@ const greatVibes = Great_Vibes({
 export const metadata: Metadata = {
   title: "FitWear2Love",
   description: "Exclusive Women Fitwear — Made in Colombia & Brazil",
-   icons: {
-    icon: "/favicon.ico",          
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png" 
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
   }
 };
 

@@ -6,7 +6,7 @@ export default function ContactPage() {
     <section className="mx-auto max-w-5xl px-4 py-16">
       {/* Heading */}
       <header className="mb-10">
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-white">
+        <h1 className="text-4xl md:text-5xl tracking-tight text-white">
           Contact
         </h1>
         <p className="mt-3 text-white/70 max-w-2xl">

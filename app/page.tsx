@@ -14,7 +14,7 @@ export default function HomePage() {
 
       <SectionDivider />
 
-      <Section alt>
+      <Section alt className="pt-6 md:pt-8">
         <ShopSection />
       </Section>
 

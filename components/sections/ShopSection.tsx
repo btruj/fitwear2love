@@ -54,7 +54,7 @@ export default function ShopSection() {
   return (
     <section
       id="shop"
-      className="mx-auto max-w-7xl px-4 md:px-8 py-16 text-white scroll-mt-28"
+      className="mx-auto max-w-7xl px-4 md:px-8 text-white scroll-mt-28"
     >
       <div className="flex items-end justify-between mb-6">
         <h2 className="text-3xl md:text-4xl font-semibold">Shop</h2>
